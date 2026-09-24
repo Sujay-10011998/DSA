@@ -1,0 +1,10 @@
+def simple_coroutine():
+    print("Coroutine started")
+    x = yield "Waiting for value..."
+    print("Received:", x)
+
+# Create generator (coroutine)
+coro = simple_coroutine()
+
+print(next(coro))      # Start the coroutine
+print(coro.send(42))   # Send value to coroutine

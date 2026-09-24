@@ -1,0 +1,11 @@
+name = "Sujay"
+age = 100
+formatted_string = "My name is {} and I am {} years old.".format(name, age)
+print(formatted_string)
+
+formatted_string = "My name is {0} and I am {1} years old. {0} is my favorite number.".format(name, age)
+print(formatted_string)
+
+price = 24
+formatted_price = "The price is ${:.2f}".format(price)
+print(formatted_price)
